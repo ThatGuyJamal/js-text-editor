@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* Variables */
+:root {
+	--editor-bg: #eee;
+	--editor-border: #3f87a6;
+}
+
+/* Reset Styles */
+* {
+	/* background-color: black; */
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+/*? Page css */
+
+.header {
+	font-family: Inconsolata;
+	background-color: #3f87a6;
+	text-align: center;
+	padding: 25px;
+}
+
+@media screen and (max-width: 760px) {
+	.header {
+		font-family: Inconsolata;
+		background-color: #3f87a6;
+		text-align: center;
+		padding: 15px;
+	}
+}
+
+/* ? Editor css */
+
+.editor {
+	/* Sets the background for the editor surrondings */
+	background-color: rgb(184, 118, 118);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.toolbar {
+	border: 1px solid lightgray;
+	margin: auto;
+	width: 80%;
+}
+
+.editor__wrapper {
+	width: 50%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	background: var(--editor-bg);
+	padding: 2em;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.editor__body {
+	flex: 1;
+}
+
+.editor__footer {
+	display: flex;
+}
+
+.editor__footer--left {
+	display: flex;
+	flex-direction: column;
+}
+
+.editor__footer--right {
+	flex: 1;
+	margin-left: 10px;
+	overflow: hidden;
+}
+
+.editor__btn {
+	border: 0;
+	padding: 0.5em;
+	background-color: #fff;
+	border: 2px solid #333;
+	margin-top: 1em;
+	width: 100px;
+	cursor: pointer;
+}
+
+.editor__console {
+	background-color: #fff;
+	width: 100%;
+	height: 130px;
+	margin-top: 0.9em;
+	border: 1px solid var(--editor-border);
+	overflow: auto;
+}
+
+.editor__code {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border: 1px solid var(--editor-border);
+}
+
+/* Editor Console Logs */
+.editor__console-logs {
+	padding: 10px;
+	list-style: none;
+}
+
+.editor__console-logs li pre {
+	font-size: 0.9em;
+	font-family: Inconsolata, sans-serif;
+}
+
+.ace_gutter {
+	border-left: 5px solid var(--editor-border);
+}
+
+/*!  Logging CSS */
+
+.log--default {
+	color: #000;
+}
+/* Logs strings to your console */
+.log--string {
+	color: #48bf0a;
+}
+/* Logs numbers to your console */
+.log--number {
+	color: #48bf0a;
+}
+/* Logs booleanto your console */
+.log--boolean {
+	color: blue;
+}
+
+.log--undefined {
+	color: grey;
+}
+
+.log--error {
+	color: red;
+}
+
+.log--object {
+	color: darkcyan;
+}
+
+.log--array {
+	color: darkblue;
+}
+
+.log--function {
+	color: yellow;
+}
+
+@media screen and (max-width: 760px) {
+	/* ? Editor css */
+
+	.editor {
+		/* Sets the background for the editor surrondings */
+		background-color: rgb(78, 78, 78);
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.editor__wrapper {
+		width: 50%;
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		background: var(--editor-bg);
+		padding: 2em;
+		border-radius: 3px;
+		border: 1px solid #ccc;
+	}
+
+	.editor__body {
+		flex: 1;
+	}
+
+	.editor__footer {
+		display: flex;
+	}
+
+	.editor__footer--left {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.editor__footer--right {
+		flex: 1;
+		margin-left: 10px;
+		overflow: hidden;
+	}
+
+	.editor__btn {
+		border: 0;
+		padding: 0.5em;
+		background-color: #fff;
+		border: 2px solid #333;
+		margin-top: 1em;
+		width: 100px;
+		cursor: pointer;
+	}
+
+	.editor__console {
+		background-color: #fff;
+		width: 100%;
+		height: 130px;
+		margin-top: 0.9em;
+		border: 1px solid var(--editor-border);
+		overflow: auto;
+	}
+
+	.editor__code {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border: 1px solid var(--editor-border);
+	}
+
+	/* Editor Console Logs */
+	.editor__console-logs {
+		padding: 10px;
+		list-style: none;
+	}
+
+	.editor__console-logs li pre {
+		font-size: 0.9em;
+		font-family: Inconsolata, sans-serif;
+	}
+
+	.ace_gutter {
+		border-left: 5px solid var(--editor-border);
+	}
+
+	/*!  Logging CSS */
+
+	.log--default {
+		color: #000;
+	}
+	/* Logs strings to your console */
+	.log--string {
+		color: #48bf0a;
+	}
+	/* Logs numbers to your console */
+	.log--number {
+		color: #48bf0a;
+	}
+	/* Logs booleanto your console */
+	.log--boolean {
+		color: blue;
+	}
+
+	.log--undefined {
+		color: grey;
+	}
+
+	.log--error {
+		color: red;
+	}
+
+	.log--object {
+		color: darkcyan;
+	}
+
+	.log--array {
+		color: darkblue;
+	}
+
+	.log--function {
+		color: yellow;
+	}
+}
