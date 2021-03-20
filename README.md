@@ -2,6 +2,7 @@
 
 ## Todo:
 
+> Add more comments on files > > >
 > Add more css styling
 > add more functions and coloring to consoleLog
 > fix javascript functions in main editor file
