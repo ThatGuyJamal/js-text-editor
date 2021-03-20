@@ -4,7 +4,7 @@
 
 > Add more comments on files > > >
 
-> Add more css styling
+> Add more css styling and mobile support
 
 > add more functions and coloring to consoleLog
 
