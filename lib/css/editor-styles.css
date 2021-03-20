@@ -23,9 +23,19 @@ body {
 
 .header {
 	font-family: Inconsolata;
-	background-color: #3f87a6;
+	background-color: #56a3c4;
 	text-align: center;
 	padding: 25px;
+}
+
+/* Toolbar buttons */
+
+.toolbar {
+	/* border: 1px solid lightgray; */
+	position: relative;
+	bottom: 780px;
+	left: 200px;
+	outline: none;
 }
 
 @media screen and (max-width: 760px) {
@@ -41,7 +51,7 @@ body {
 
 .editor {
 	/* Sets the background for the editor surrondings */
-	background-color: rgb(184, 118, 118);
+	background-color: rgb(209, 144, 144);
 	height: 100%;
 	width: 100%;
 	display: flex;
