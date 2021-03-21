@@ -1,11 +1,15 @@
+/* Inconsolata */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
-/*  */
+/* Chango */
 @import url("https://fonts.googleapis.com/css2?family=Chango&display=swap");
+/* Syne Mono */
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 /*  */
 html,
 body {
 	height: 100%;
 	width: 100%;
+	background: rgb(209, 144, 144);
 }
 .header h2 {
 	text-decoration: underline;
@@ -52,9 +56,11 @@ body {
 	}
 }
 
-/* Main body for sub pages */
+/* ! Main body for sub pages */
 
 .page-body {
+	background-image: url(https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/source.gif);
+
 	background-color: rgb(209, 144, 144);
 	height: 100%;
 	width: 100%;
@@ -66,7 +72,19 @@ body {
 
 /* ? About page */
 
+img {
+	width: 50%;
+	max-width: 600px;
+	position: relative;
+	border-radius: 50%;
+	/*! Center the img */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .page-body-1 h2 {
+	color: #fff;
 	position: relative;
 	text-align: center;
 	top: 30px;
@@ -76,6 +94,8 @@ body {
 }
 
 .page-body-1 p {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
 	cursor: pointer;
 	position: relative;
 	top: 35px;
@@ -99,4 +119,78 @@ body {
 		#56a3c4 80%
 	);
 	background: -moz-linear-gradient(295deg, rgb(209, 144, 144) 0%, #56a3c4 80%);
+}
+
+.page-body-1 a {
+	/* text-decoration: none; */
+	color: rgb(172, 255, 216);
+	font-family: Syne Mono;
+}
+
+.page-body-1 a:hover {
+	/* text-decoration: none; */
+	color: rgb(255, 255, 255);
+	font-size: 24px;
+}
+
+@media screen and (max-width: 560px) {
+	img {
+		width: 100%;
+	}
+
+	.page-body {
+		background-color: rgb(209, 144, 144);
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/* justify-content: center; */
+		align-items: center;
+	}
+}
+
+/* ! Contact page */
+
+.gifhy-embed {
+	width: 50%;
+	max-width: 600px;
+	/*! Center the img */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-body-2 p {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+}
+.page-body-2 a {
+	/* text-decoration: none; */
+	color: rgb(172, 255, 216);
+	font-family: Syne Mono;
+}
+
+.page-body-2 a:hover {
+	/* text-decoration: none; */
+	color: rgb(255, 255, 255);
+	font-size: 24px;
+}
+
+/* ? instructions page */
+
+.ints h1,
+h2,
+h3,
+p {
+	align-items: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+}
+
+#h2-howto {
+	text-decoration: underline;
+}
+
+.ints a {
+	/* text-decoration: none; */
+	color: rgb(172, 255, 216);
+	font-family: Syne Mono;
 }

@@ -11,3 +11,5 @@
 > fix javascript functions in main editor file
 
 > deploy website live for testing and flexing
+
+> Build in next js
