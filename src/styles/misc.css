@@ -59,7 +59,7 @@ body {
 /* ! Main body for sub pages */
 
 .page-body {
-	background-image: url(https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/source.gif);
+	/* background-image: url(https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/source.gif); */
 
 	background-color: rgb(209, 144, 144);
 	height: 100%;
