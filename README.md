@@ -1,5 +1,9 @@
 # js-text-editor
 
+## Want to test it live?
+
+[Here](https://thatguyjamal.github.io/js-text-editor/) is a link to the live site where you can test the javascript editor live.
+
 ## Todo:
 
 > Add more comments on files > > >
